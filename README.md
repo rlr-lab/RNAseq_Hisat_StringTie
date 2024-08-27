@@ -58,7 +58,7 @@ $PATH/stringtie/stringtie --merge -p 8 -G $PATH/hisat2/indexes/grch38.gtf -o mer
 Now, we rerun Stringtie with the merged .gtf file
 
 ```
-$PATH/stringtie/stringtie -e -B -G glunisertib_merged.gtf -o ${base}_stringtie_output_merged/${base}.gtf -l ${base}_stringtie_output_merged/${base} ${infile}
+$PATH/stringtie/stringtie -e -B -G merged.gtf -o ${base}_stringtie_output_merged/${base}.gtf -l ${base}_stringtie_output_merged/${base} ${infile}
 ```
 
 ## Prepare for DESeq2
